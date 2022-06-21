@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required />
+      <label id="email-label">E-mail</label>
+      <input id="email" type="email" placeholder="Enter your email" required />
+      <label id="number-label">Age (optional)</label>
+      <input
+        id="age"
+        type="number"
+        min="13"
+        max="99"
+        placeholder="Enter your age"
+      />
+      <label>What is your current role</label>
+      <select>
+        <option value="">Choose your current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full-time Employed</option>
+        <option value="3">Part-time Employed</option>
+        <option value="4">Full-time Learner</option>
+        <option value="5">Prefer not to say</option>
+        <option value="6">Other</option>
+      </select>
+    </form>
+  </body>
+</html>
